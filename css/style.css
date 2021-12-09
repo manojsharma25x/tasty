@@ -1,0 +1,727 @@
+:root {
+  --theme-red: rgba(234, 39, 45, 1);
+  --dark: #000;
+  --light: #fff;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Satisfy", cursive; */
+  color: #fff;
+  line-height: 1.5;
+  /* text-transform: capitalize; */
+
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+  height: 100vh;
+  background: url("../images/hero_1.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  padding: 1.5rem 0;
+  text-transform: capitalize;
+}
+
+.logo-dot {
+  color: #ea272d;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 1.5rem;
+  font-size: 0.9rem;
+
+
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 3px;
+}
+
+a.active, a:hover, .active-navlink {
+  /* text-decoration: underline; */
+  border-bottom: 3px solid var(--theme-red);
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.3s;
+  /* border-length: 70%; */
+
+}
+
+/* ul li.active>a::after {
+  position: absolute;
+  bottom: 25 px;
+  left: 0;
+  right: 0;
+  content: '';
+  width: 30 px;
+  height: 2 px;
+  background: #ea272d;
+  margin: 0 auto;
+} */
+
+.masthead {
+
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masthead h1 {
+  font-size: 4.5rem;
+}
+
+.masthead h3 {
+  font-size: 2rem;
+  /* font-family: "Satisfy", cursive; */
+  font-weight: 400;
+}
+
+.header-h1 {
+  width: 80%;
+  text-align: center;
+  border: 2px soild var(--theme-red);
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../images/broken_noise.png");
+  justify-content: flex-start;
+  padding: 8rem 0;
+}
+
+.left-img {
+  width: 50%;
+  overflow-x: hidden;
+}
+
+.right-content {
+  width: 50%;
+  padding: 0rem 4rem;
+}
+
+.left-img img {
+  /* margin-left: -20rem; */
+  overflow-x: hidden;
+}
+
+.about-content-text h3 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.about-content-text p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+
+/* .remove-a{
+
+} */
+.btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--theme-red);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  background: var(--theme-red);
+}
+
+
+
+.menu-text {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../images/broken_noise.png");
+  justify-content: flex-start;
+  padding: 8rem 4rem 4rem 4rem;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.menu-text h3 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.menu-text p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+}
+
+.menu-card-section {
+  background: url("../images/broken_noise.png");
+  padding: 4rem 4rem;
+}
+
+.grid4card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.even {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.odd {
+  position: relative;
+  margin-top: -9rem;
+}
+
+.menu-card img {
+  width: 100%;
+}
+
+.menu-card h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+
+.menu-card span {
+  color: #fee856;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.menu-card sup {
+  color: #fee856;
+  font-size: 75%;
+}
+
+.menu-card p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  /* line-height: 1; */
+  font-size: 1rem;
+
+}
+
+.div-4-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: right;
+}
+
+.menu-card-section a:hover {
+  border: none;
+}
+
+
+.menu {
+  background: url(../images/broken_noise.png);
+  min-height: 50vh;
+  padding: 4rem 4rem 8rem 4rem;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  color: var(--light);
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  background: url(../images/broken_noise.png);
+  height: 100%;
+  box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 6%);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* background-color: white;
+  background-color: rgba(255, 255, 255, 0.5); */
+  right: 0px;
+  padding: 15px;
+  color: var(--theme-red) !important;
+  fill: var(--theme-red) !important;
+  stroke: var(--theme-red) !important;
+  height: 10px !important;
+}
+
+
+.swiper-pagination-bullet {
+
+  color: var(--theme-red) !important;
+  fill: var(--theme-red) !important;
+  stroke: var(--theme-red) !important;
+}
+
+
+
+
+
+.book-table {
+  background: url(../images/hero_1.jpeg) no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+
+
+}
+
+.overlay-book-table {
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  /* position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 4rem;
+  background: rgba(0, 0, 0, 0.7);
+
+}
+
+/* 
+  min-height: 100vh;
+  position: relative; */
+
+
+.booktable-inner {
+  width: 50vw;
+  z-index: 6;
+
+}
+
+.book-table h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.book-table p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+}
+
+footer {
+  background: url(../images/broken_noise.png) no-repeat fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'grid-item1 grid-item2 grid-item3'
+    'copyright-social copyright-social copyright-social';
+  padding: 8rem 4rem;
+}
+
+.footer-grid-item h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px !important;
+}
+
+.footer-grid-item p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 10px !important;
+  box-sizing: border-box;
+}
+
+.footer-grid-item a:hover {
+  /* font-size: 1rem !important; */
+  border-bottom: solid 2px var(--theme-red) !important;
+
+}
+
+.grid-item2 {
+  margin-left: auto;
+  margin-right: 4rem;
+  text-align: left;
+}
+
+.grid-item3 {
+  margin-left: auto;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+.copyright-social {
+  grid-area: copyright-social;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 4rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+.copyright-social p {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.copyright-social p a {
+  border: none;
+}
+
+.copyright-social p i {
+  color: var(--theme-red);
+  margin: 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* reservation */
+
+
+.reservation-text {
+  background: url(../images/broken_noise.png) no-repeat;
+  background-size: cover;
+  padding: 8rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-left-content {
+  width: 50%;
+}
+
+.res-content-text h3 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.res-content-text p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+}
+
+/* reservation form */
+.resv-form {
+  background: url(../images/broken_noise.png) no-repeat;
+  background-size: cover;
+  padding: 0rem 4rem 8rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.form-right {
+  width: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+}
+
+.form-input .input {
+  width: 100%;
+  background-color: #1b1b1b;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+
+
+input[type="datetime-local"] {
+  font-family: 'Cormorant Garamond', serif;
+  /* color: #000 !important; */
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input[type="submit"] {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: transparent !important;
+  outline: none;
+  border: 2px solid var(--theme-red);
+  padding: 0.7rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--theme-red) !important;
+}
+
+.form-input label {
+  color: var(--light);
+}
+
+
+
+/* contact */
+
+
+.contact {
+  background: url(../images/broken_noise.png) no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 4rem;
+
+
+}
+
+.contact-inner {
+  width: 50vw;
+  z-index: 6;
+
+}
+
+.contact h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+}
+.map{
+  background: url(../images/broken_noise.png) no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 4rem;
+}
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.timeline-section{
+  background: url(../images/broken_noise.png) no-repeat fixed;
+  background-size: cover;
+}
+
+
+
+/* gallery*/
+.photos{
+  background: url(../images/broken_noise.png) no-repeat fixed;
+  background-size: cover;
+  padding: 8rem 4rem;
+}
+.grid4photos{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+}
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+}
+.photo-item2{
+  grid-column: 2/ 4;
+  grid-row: 1/ 3;
+}
+.photo-item8{
+  grid-column: 3/ 5;
+  grid-row: 3/ 5;
+}
+.photo-item10{
+  grid-column: 2/ 4;
+  grid-row: 5/ 7;
+}
+.photo-item12{
+  grid-column: 3/ 5;
+  grid-row: 7/ 9;
+}
+
+
+
+
+
+
+
+
+/* menu button */
+/* menu button */
+/* menu button */
+/* menu button */
+/* menu button */
+
+.nav-bar-overlay{
+  display: block;
+  z-index:5000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: -100vw;
+  background: rgba(0, 0, 0, 0.5) fixed;
+  
+}
+ .small-menu-section{
+  background: url(../images/broken_noise.png) no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.menu-flex-item{
+  height: 50vh;
+} 
+
+.nav-btn{
+  display: inline-block;
+  position: absolute;
+  right: 1.5rem;
+  top: 2.3rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+@media only screen and (min-width: 769px) {
+  .nav-btn{
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .nav-btn{
+    top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* menu button */
+/* menu button */
+/* menu button */
+/* menu button */
